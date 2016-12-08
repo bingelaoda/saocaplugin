@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SAOptPlugin
+Bundle-SymbolicName: SAOptPlugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: saoptplugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.debug.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.debug.core,
+ org.apache.log4j
+Export-Package: foundation.fileUtil,
+ pcmSolverDemo,
+ saoptplugin,
+ saoptplugin.handlers
+
