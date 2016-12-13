@@ -185,7 +185,6 @@ public class ConfigurationWindow extends JFrame implements WindowListener, Actio
 		lowerPane.add(saveConfigurationButton, gbc_saveConfigurationButton);
 
 		startButton = new JButton("Start");
-		startButton.setMnemonic(KeyEvent.VK_0);
 		startButton.addActionListener(this);
 		GridBagConstraints gbc_startButton = new GridBagConstraints();
 		gbc_startButton.gridx = 4;
