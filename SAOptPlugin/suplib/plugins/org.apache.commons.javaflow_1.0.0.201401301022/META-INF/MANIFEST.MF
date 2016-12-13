@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 20.9-b04 (Sun Microsystems Inc.)
+Export-Package: org.apache.bcel,org.apache.bcel.classfile,org.apache.b
+ cel.generic,org.apache.bcel.util,org.apache.bcel.verifier,org.apache.
+ bcel.verifier.exc,org.apache.bcel.verifier.statics,org.apache.bcel.ve
+ rifier.structurals,org.apache.commons.javaflow,org.apache.commons.jav
+ aflow.ant,org.apache.commons.javaflow.bytecode,org.apache.commons.jav
+ aflow.bytecode.transformation,org.apache.commons.javaflow.bytecode.tr
+ ansformation.asm,org.apache.commons.javaflow.bytecode.transformation.
+ bcel,org.apache.commons.javaflow.bytecode.transformation.bcel.analyse
+ r,org.apache.commons.javaflow.stores,org.apache.commons.javaflow.util
+ s,org.apache.commons.logging,org.apache.commons.logging.impl
+Bundle-Vendor: sdq.ipd.uka.de
+Bundle-ClassPath: javaflow.jar
+Bundle-Version: 1.0.0.201401301022
+Bundle-Name: Apache Commons Javaflow Wrapper Plug-in
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.apache.commons.javaflow
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

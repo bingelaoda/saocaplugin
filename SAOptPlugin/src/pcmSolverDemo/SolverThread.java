@@ -8,6 +8,7 @@ import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.ILaunchConfigurationType;
 import org.eclipse.debug.core.ILaunchManager;
+import org.eclipse.ui.handlers.IHandlerService;
 
 //import org.eclipse.debug.core.model.IProcess;
 import org.eclipse.debug.ui.DebugUITools;
@@ -48,35 +49,39 @@ public class SolverThread implements Runnable {
 		}
 	}
 
-	public String executeCmd(String lchClsName, String cfgName) {
-		launchManager = DebugPlugin.getDefault().getLaunchManager();
-		ILaunchConfigurationType lchCfgType = launchManager.getLaunchConfigurationType(lchClsName);
-		String state = null;
-		ILaunchConfiguration[] lchCfgs = null;
-		try {
-			lchCfgs = launchManager.getLaunchConfigurations(lchCfgType);// 运行配置
-			for (ILaunchConfiguration lchCfg : lchCfgs) {
-				String name = lchCfg.getName().trim();
-				if (name != null && name.equals(cfgName.trim())) {// 找到对应的运行配置
-					state = doLaunch(lchCfg);// 发起lunch,执行命令
-					break;
-				}
-			}
-		} catch (CoreException e) {
-			logger.error("获取运行配置" + lchClsName + ": " + cfgName + "发生异常\n", e);
-			state = "-1";
-		}
-/*
-		if (state.equals("1")) {
-			logger.debug("执行命令" + lchClsName + ": " + cfgName + "成功\n");
-		} else {
+//	public String executeCmd(String lchClsName, String cfgName) {
+//		launchManager = DebugPlugin.getDefault().getLaunchManager();
+//		ILaunchConfigurationType lchCfgType = launchManager.getLaunchConfigurationType(lchClsName);
+//		String state = null;
+//		ILaunchConfiguration[] lchCfgs = null;
+//		try {
+//			lchCfgs = launchManager.getLaunchConfigurations(lchCfgType);// 运行配置
+//			for (ILaunchConfiguration lchCfg : lchCfgs) {
+//				String name = lchCfg.getName().trim();
+//				if (name != null && name.equals(cfgName.trim())) {// 找到对应的运行配置
+//					state = doLaunch(lchCfg);// 发起lunch,执行命令
+//					break;
+//				}
+//			}
+//		} catch (CoreException e) {
+//			logger.error("获取运行配置" + lchClsName + ": " + cfgName + "发生异常\n", e);
+//			state = "-1";
+//		}
+///*
+//		if (state.equals("1")) {
+//			logger.debug("执行命令" + lchClsName + ": " + cfgName + "成功\n");
+//		} else {
+//	
+//			if (state.equals("-2")) {
+//				logger.debug("执行命令" + lchClsName + ": " + cfgName + "超时\n");
+//			}
+//		}
+//		*/
+//		return state;
+//	}
 	
-			if (state.equals("-2")) {
-				logger.debug("执行命令" + lchClsName + ": " + cfgName + "超时\n");
-			}
-		}
-		*/
-		return state;
+	public String executeCmd(String lchClsName, String cfgName){
+		IHandlerService handlerService = (IHandlerService)get
 	}
 
 	private String doLaunch(ILaunchConfiguration lchCfg) {

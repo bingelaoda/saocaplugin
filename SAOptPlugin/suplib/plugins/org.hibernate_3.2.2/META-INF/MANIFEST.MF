@@ -1,0 +1,55 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 20.9-b04 (Sun Microsystems Inc.)
+Eclipse-BuddyPolicy: dependent
+Bundle-ManifestVersion: 2
+Bundle-Name: Hibernate Wrapper Plug-in
+Bundle-SymbolicName: org.hibernate
+Bundle-Version: 3.2.2
+Bundle-ClassPath: hibernate3.jar,antlr-2.7.6.jar,c3p0-0.9.1.jar,common
+ s-collections-2.1.1.jar,dom4j-1.6.1.jar,cglib-2.1.3.jar,asm.jar,asm-a
+ ttrs.jar,hibernate-entitymanager.jar,ejb3-persistence.jar,hibernate-a
+ nnotations.jar,jta.jar,jboss-archive-browsing.jar,mysql-connector-jav
+ a-5.0.4-bin.jar,javassist.jar,hibernate-commons-annotations.jar
+Export-Package: antlr,javax.persistence,javax.persistence.spi,javax.tr
+ ansaction,javax.transaction.xa,org.hibernate,org.hibernate.action,org
+ .hibernate.annotations,org.hibernate.annotations.common,org.hibernate
+ .annotations.common.annotationfactory,org.hibernate.annotations.commo
+ n.reflection,org.hibernate.annotations.common.reflection.java,org.hib
+ ernate.annotations.common.reflection.java.generics,org.hibernate.anno
+ tations.common.util,org.hibernate.bytecode,org.hibernate.bytecode.cgl
+ ib,org.hibernate.bytecode.javassist,org.hibernate.bytecode.util,org.h
+ ibernate.cache,org.hibernate.cache.entry,org.hibernate.cfg,org.hibern
+ ate.cfg.annotations,org.hibernate.cfg.annotations.reflection,org.hibe
+ rnate.classic,org.hibernate.collection,org.hibernate.connection,org.h
+ ibernate.context,org.hibernate.criterion,org.hibernate.dialect,org.hi
+ bernate.dialect.function,org.hibernate.dialect.lock,org.hibernate.ejb
+ ,org.hibernate.ejb.connection,org.hibernate.ejb.event,org.hibernate.e
+ jb.instrument,org.hibernate.ejb.packaging,org.hibernate.ejb.transacti
+ on,org.hibernate.ejb.util,org.hibernate.engine,org.hibernate.engine.l
+ oading,org.hibernate.engine.query,org.hibernate.engine.query.sql,org.
+ hibernate.engine.transaction,org.hibernate.event,org.hibernate.event.
+ def,org.hibernate.exception,org.hibernate.hql,org.hibernate.hql.antlr
+ ,org.hibernate.hql.ast,org.hibernate.hql.ast.exec,org.hibernate.hql.a
+ st.tree,org.hibernate.hql.ast.util,org.hibernate.hql.classic,org.hibe
+ rnate.id,org.hibernate.id.enhanced,org.hibernate.id.insert,org.hibern
+ ate.impl,org.hibernate.intercept,org.hibernate.intercept.cglib,org.hi
+ bernate.intercept.javassist,org.hibernate.jdbc,org.hibernate.jmx,org.
+ hibernate.loader,org.hibernate.loader.collection,org.hibernate.loader
+ .criteria,org.hibernate.loader.custom,org.hibernate.loader.custom.sql
+ ,org.hibernate.loader.entity,org.hibernate.loader.hql,org.hibernate.l
+ ob,org.hibernate.mapping,org.hibernate.metadata,org.hibernate.param,o
+ rg.hibernate.persister,org.hibernate.persister.collection,org.hiberna
+ te.persister.entity,org.hibernate.pretty,org.hibernate.property,org.h
+ ibernate.proxy,org.hibernate.proxy.dom4j,org.hibernate.proxy.map,org.
+ hibernate.proxy.pojo,org.hibernate.proxy.pojo.cglib,org.hibernate.pro
+ xy.pojo.javassist,org.hibernate.secure,org.hibernate.sql,org.hibernat
+ e.stat,org.hibernate.tool.hbm2ddl,org.hibernate.tool.instrument,org.h
+ ibernate.tool.instrument.cglib,org.hibernate.tool.instrument.javassis
+ t,org.hibernate.transaction,org.hibernate.transform,org.hibernate.tup
+ le,org.hibernate.tuple.component,org.hibernate.tuple.entity,org.hiber
+ nate.type,org.hibernate.usertype,org.hibernate.util
+Require-Bundle: org.apache.commons.logging,org.apache.log4j
+Bundle-Vendor: sdq.ipd.uka.de
+Bundle-ActivationPolicy: lazy
+
